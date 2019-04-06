@@ -25,7 +25,7 @@ int main()
 {
     int a[n],n,i,sum=0;
     get_input(*n);
-    add(n,sum,i,a[n]);
+    addn(n,sum,i,a[n]);
     get_output(sum);
     return 0;
 }
