@@ -4,15 +4,16 @@ void getn(int *n)
     printf("enter n\n");
     scanf("%d",n);
 }
-void get_input(int a[n],int n)
+void get_input(int *n,int a[n])
 { 
-    for(int i=0;i<n;i++)
+    for(int i=0;i<*n;i++)
     printf("enter number\n");
     scanf("%d",&a[i]);
 }
-int addn(int n,int sum,int a[n])
+int addn(int *n,int sum,int a[n])
 {
-    for(int i=0;i<n;i++)
+    sum=0;
+    for(int i=0;i<*n;i++)
     sum+=a[i];
    }
 void get_output(int sum)
@@ -28,4 +29,3 @@ int main()
     get_output(sum);
     return 0;
 }
-    
