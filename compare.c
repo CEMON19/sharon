@@ -10,7 +10,7 @@ void get_input(int *a,int *b,int *c)
 }
 int compare(int a,int b,int c)
 {
-    if (a>b)
+    if (a<b)
     {
         if (a<c)
         printf("smallest number is %d",a);
@@ -25,4 +25,11 @@ int compare(int a,int b,int c)
         if(c<b)
         printf("smallest number is %d",c);
     }
+}
+int main()
+{
+    int a,b,c;
+    get_input(&a,&b,&c);
+    compare(a,b,c);
+    return 0;
 }
